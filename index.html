@@ -1,16 +1,97 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>TypeScript HTML App1</title>
-    <link rel="stylesheet" href="app.css" type="text/css" />
-    <script src="out/main.js"></script>
-    <script src="out/Pleple.js"></script>
-</head>
-<body>
-    <h1>TypeScript HTML App</h1>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <style>
+            html,
+            body {
+                padding: 0;
+                margin: 0;
+                background: #272727;
+                font: 400 16px/1.7 "Microsoft JhengHei", sans-serif;
+            }
 
-    <div id="content"></div>
-</body>
+            div,ul,li,h1,p,h2{
+                padding: 0;
+                margin: 0;
+            }
+            ul,li{
+                list-style: none;
+            }
+            .main{
+                text-align: center;
+            }
+            .content{
+                background: #fff;
+                padding: 20px;
+                display: inline-block;
+            }
+            .content-top{
+                font-size: 14px;
+            }
+            .content-top h2{
+                background: #FF8901;
+                color: #fff;
+                font-size: 20px;
+                padding: 10px 0;
+                font-weight: normal;
+            }
+            .content-top a{
+                display: block;
+                color: #FF8901;
+                font-style: normal;
+                display: block;
+                margin: 2px 0;
+            }
+            .content-top li{
+                padding: 20px 0;
+                border-bottom: 1px solid #E2E0DE
+            }
+            .main h1{
+                color: #FF8901;
+                font-weight: normal;
+                padding: 40px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>字幕网 | 地址发布页20181003</h1>
+            <div class="content">
+                <div class="content-top">
+                    <h2>请大家 Ctrl+D 收藏本页</h2>
+                    <ul>
+                        <li>
+                            字幕网最新地址
+                            <a href="http://zmsp2.com" target="_blank">http://zmsp2.com</a>
+                        </li>
+                        <li>
+                            字幕网备用地址
+                            <a href="http://zmsp3.com" target="_blank">http://zmsp3.com</a>
+                            <a href="http://zmsp4.com" target="_blank">http://zmsp4.com</a>
+							<a href="http://zmsp5.com" target="_blank">http://zmsp5.com</a>
+							<a href="http://zmsp6.com" target="_blank">http://zmsp6.com</a>
+							<a href="http://zmsp7.com" target="_blank">http://zmsp7.com</a>
+                        </li>
+                        <li>
+                            字幕网海外永久地址
+                            <a id='go' href="http://www.yezmw.com" target="_blank">http://www.yezmw.com</a>
+                            <script>
+                                setTimeout(function(){
+                                    document.getElementById('go').click();
+                                },1000)
+                            </script>
+                        </li>
+
+                    </ul>
+                    <p>如果以上地址均无法打开，欢迎发送邮件告知： <br>
+                        91zmw.com@gmail.com<br>
+                        会自动回复最新地址！</p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
